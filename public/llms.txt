@@ -1,0 +1,19 @@
+# DigiePages
+
+> DigiePages provides hyper-local digital marketing for local businesses: hyper-local directories, Google Business Profile optimization, local ad products, and lead attribution.
+
+## Services
+- [Hyper-Local Directories](https://digiepages.com/services/local-directories): town, area, and category directory sites with schema markup.
+- [Google Business Profile Engine](https://digiepages.com/services/google-business-profile): setup, posts, reviews, and insights.
+- [Digital Ad Products](https://digiepages.com/services/local-ads): Local Services Ads, Maps and Search, and Meta geo-targeted campaigns.
+- [Lead Attribution](https://digiepages.com/services/lead-attribution): call tracking and channel reporting.
+
+## Key pages
+- [Pricing](https://digiepages.com/pricing)
+- [How it works](https://digiepages.com/how-it-works)
+- [Industries](https://digiepages.com/industries)
+- [Blog](https://digiepages.com/blog)
+- [Contact](https://digiepages.com/contact)
+
+## Contact
+info@digiepages.com
