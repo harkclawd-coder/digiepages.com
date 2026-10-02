@@ -1,7 +1,7 @@
 import type { NextConfig } from "next";
 
 const nextConfig: NextConfig = {
-  output: 'standalone',
+  // Cloudflare Pages native Next.js support doesn't need output: standalone
 };
 
 export default nextConfig;
