@@ -4,7 +4,7 @@ import { POSTS } from "@/lib/posts";
 
 export default function sitemap(): MetadataRoute.Sitemap {
   const now = new Date();
-  const top = ["", "/services", "/industries", "/pricing", "/how-it-works", "/about", "/contact", "/blog"];
+  const top = ["", "/services", "/industries", "/how-it-works", "/about", "/contact", "/blog"];
   return [
     ...top.map((p) => ({
       url: `${SITE.url}${p}`,

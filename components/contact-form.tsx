@@ -36,7 +36,7 @@ export function ContactForm({ defaultPlan }: { defaultPlan?: string }) {
     ].join("\n");
 
     // Try Twenty CRM lead creation via GraphQL
-    const TWENTY_SECRET = "digiepages_twenty_secret_key_998877665544332211";
+    const TWENTY_SECRET = process.env.NEXT_PUBLIC_TWENTY_SECRET ?? "";
     const twentyEmail = email;
 
     if (twentyEmail) {
