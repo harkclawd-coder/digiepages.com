@@ -1,3 +1,5 @@
+export const dynamic = "force-static";
+
 import type { MetadataRoute } from "next";
 import { SITE } from "@/lib/site";
 
@@ -13,3 +15,4 @@ export default function manifest(): MetadataRoute.Manifest {
     icons: [{ src: "/icon.svg", sizes: "any", type: "image/svg+xml" }],
   };
 }
+
