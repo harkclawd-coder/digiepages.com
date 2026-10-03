@@ -12,8 +12,8 @@ export const metadata = pageMetadata({
   path: "/contact",
 });
 
-// 1. The Main Page: Made completely synchronous so Next.js can prerender it safely
-export default function ContactPage(props: PageProps<"/contact">) {
+// FIX 1: Component changed to a regular synchronous function (no async keyword)
+export default function ContactPage(props: { searchParams: Promise<any> }) {
   return (
     <>
       <JsonLd data={breadcrumbLd([{ name: "Home", path: "/" }, { name: "Contact", path: "/contact" }])} />
@@ -24,7 +24,7 @@ export default function ContactPage(props: PageProps<"/contact">) {
       />
       <section className="mx-auto grid max-w-7xl gap-12 px-5 pb-24 md:px-8 lg:grid-cols-2">
         <div className="rounded-3xl border border-line bg-surface p-6 md:p-10">
-          {/* 2. Wrap the dynamic parameter block inside a Suspense component boundary */}
+          {/* FIX 2: Wrapped safely inside a client-side streaming Suspense container */}
           <Suspense fallback={<div className="h-64 animate-pulse bg-line/20 rounded-2xl" />}>
             <ContactFormWrapper searchParams={props.searchParams} />
           </Suspense>
@@ -48,10 +48,10 @@ export default function ContactPage(props: PageProps<"/contact">) {
   );
 }
 
-// 3. Isolated Dynamic Wrapper: Safely reads the async URL parameter search parameters inside the client
+// FIX 3: Isolated wrapper to safely resolve search parameters inside the browser bundle
 async function ContactFormWrapper({ searchParams }: { searchParams: Promise<any> }) {
   const sp = await searchParams;
-  const plan = typeof sp.plan === "string" ? sp.plan : undefined;
+  const plan = typeof sp?.plan === "string" ? sp.plan : undefined;
 
   return <ContactForm defaultPlan={plan} />;
 }
