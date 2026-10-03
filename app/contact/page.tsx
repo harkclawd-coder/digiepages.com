@@ -1,22 +1,15 @@
+"use client";
+
 import { Suspense } from "react";
+import { useSearchParams } from "next/navigation";
 import { SITE } from "@/lib/site";
-import { breadcrumbLd, pageMetadata } from "@/lib/seo";
-import { JsonLd } from "@/components/json-ld";
 import { PageHeader } from "@/components/page-header";
 import { ContactForm } from "@/components/contact-form";
 
-export const metadata = pageMetadata({
-  title: "Get a free audit",
-  description:
-    "Request a free local visibility audit covering listings, Google Business Profile, reviews, and gaps.",
-  path: "/contact",
-});
-
-// FIX 1: Component changed to a regular synchronous function (no async keyword)
-export default function ContactPage(props: { searchParams: Promise<any> }) {
+// Main Page: Now a standard client-routing skeleton file that compiles instantly 
+export default function ContactPage() {
   return (
     <>
-      <JsonLd data={breadcrumbLd([{ name: "Home", path: "/" }, { name: "Contact", path: "/contact" }])} />
       <PageHeader
         title="Tell us about your business"
         intro="We reply with a local visibility audit plan within one business day."
@@ -24,9 +17,9 @@ export default function ContactPage(props: { searchParams: Promise<any> }) {
       />
       <section className="mx-auto grid max-w-7xl gap-12 px-5 pb-24 md:px-8 lg:grid-cols-2">
         <div className="rounded-3xl border border-line bg-surface p-6 md:p-10">
-          {/* FIX 2: Wrapped safely inside a client-side streaming Suspense container */}
+          {/* Wrapped in Suspense so Next.js exports it safely */}
           <Suspense fallback={<div className="h-64 animate-pulse bg-line/20 rounded-2xl" />}>
-            <ContactFormWrapper searchParams={props.searchParams} />
+            <ContactFormWithParams />
           </Suspense>
         </div>
         <aside className="text-[15px] leading-relaxed">
@@ -48,11 +41,11 @@ export default function ContactPage(props: { searchParams: Promise<any> }) {
   );
 }
 
-// FIX 3: Isolated wrapper to safely resolve search parameters inside the browser bundle
-async function ContactFormWrapper({ searchParams }: { searchParams: Promise<any> }) {
-  const sp = await searchParams;
-  const plan = typeof sp?.plan === "string" ? sp.plan : undefined;
+// Subcomponent: Safely isolates URL reading inside the browser execution context
+function ContactFormWithParams() {
+  const searchParams = useSearchParams();
+  const planParam = searchParams.get("plan");
+  const plan = planParam || undefined;
 
   return <ContactForm defaultPlan={plan} />;
 }
-
