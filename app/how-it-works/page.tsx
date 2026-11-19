@@ -18,7 +18,7 @@ export default function HowItWorksPage() {
       <JsonLd data={breadcrumbLd([{ name: "Home", path: "/" }, { name: "How it works", path: "/how-it-works" }])} />
       <PageHeader
         title="From audit to compounding local results"
-        intro="Directory discipline, startup speed, and a partner mindset."
+        intro="Marketing discipline, startup speed, and a partner mindset."
         crumbs={[{ name: "How it works", href: "/how-it-works" }]}
       />
       <section className="mx-auto max-w-7xl px-5 pb-24 md:px-8">

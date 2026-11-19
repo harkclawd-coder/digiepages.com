@@ -30,7 +30,7 @@ export default function OgImage() {
           Hyper-local marketing that puts you on the map
         </div>
         <div style={{ fontSize: 30, color: "#9db0a7" }}>
-          Directories · Google Business Profile · Local ads
+          Local marketing · Paid ads · Local SEO
         </div>
       </div>
     ),

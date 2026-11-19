@@ -1,4 +1,7 @@
+"use client";
+
 import Link from "next/link";
+import { Phone } from "@phosphor-icons/react";
 import { INDUSTRIES, SERVICES, SITE } from "@/lib/site";
 import { Logo } from "./logo";
 
@@ -11,13 +14,16 @@ export function Footer() {
         <div className="bezel">
           <div className="bezel-core-flat px-7 py-14 md:px-14">
             <div className="grid gap-12 md:grid-cols-[1.5fr_1fr_1fr_1fr]">
-              <div className="max-w-xs">
+                <div className="max-w-xs">
                 <Logo />
                 <p className="mt-5 text-[15px] leading-relaxed text-muted">
-                  Hyper-local digital marketing for local businesses.
-                  Directories, Google Business Profile optimization, and lead
-                  generation.
+                  Hyper-local, local, regional, and national marketing for
+                  local businesses. Paid ads, local SEO, and lead generation.
                 </p>
+                <div className="mt-4 flex items-center gap-2">
+                  <Phone size={16} className="text-accent-text" />
+                  <span className="font-semibold">{SITE.phone}</span>
+                </div>
                 <Link
                   href="/contact"
                   className="mt-6 inline-flex h-11 items-center rounded-full bg-ink px-5 text-[15px] font-medium text-paper transition-transform duration-300 ease-glide active:scale-[0.97]"

@@ -16,11 +16,12 @@ import {
 export const SITE = {
   name: "DigiePages",
   url: process.env.NEXT_PUBLIC_SITE_URL ?? "https://digiepages.com",
-  tagline: "Hyper-local digital marketing that puts you on the map",
+  tagline: "Hyper-local, local, regional & national marketing that gets you calls",
   description:
-    "DigiePages builds hyper-local directories, optimizes Google Business Profiles, and runs local ad products that turn searches into calls, visits, and booked jobs.",
+    "DigiePages runs hyper-local marketing campaigns, local SEO, regional ad products, national paid campaigns, and phone systems that turn nearby searches into calls and booked jobs.",
   email: "info@digiepages.com",
   altEmail: "hi@digiepages.com",
+  phone: "(604) 283-3919",
   cta: "Get a free audit",
 } as const;
 
@@ -32,7 +33,7 @@ export const NAV = [
 ] as const;
 
 export const STATS = [
-  { value: "15+", label: "Years of directory heritage" },
+  { value: "15+", label: "Years of marketing experience" },
   { value: "500+", label: "Local clients served" },
   { value: "3×", label: "Average lead increase" },
 ] as const;
@@ -56,9 +57,9 @@ export const SERVICES: Service[] = [
     name: "Priority Spotlight Placement",
     short: "Spotlight Ads",
     icon: Megaphone,
-    summary: "Featured Spotlight with Guaranteed Interactions — we purchase targeted Google ad space that sends local searchers straight to our Lower Mainland business directory, where your listing sits inside a bright red spotlight box right at the top of your category.",
+    summary: "Featured Spotlight with Guaranteed Interactions — we purchase targeted Google ad space that sends local searchers straight to your business inside a bright red spotlight box right at the top of search results, driving immediate views and calls.",
     headline: "Guaranteed visibility at the top of your category",
-    intro: "We buy premium Google ad placements that put your business in a spotlight box at the very top of local search results, driving immediate views and interactions.",
+    intro: "We buy premium Google ad placements that put your business in a spotlight box at the very top of local search results, driving immediate views and calls.",
     features: [
       "Targeted Google ad placement in your service category",
       "Bright red spotlight box at top of search results",
@@ -100,7 +101,7 @@ export const SERVICES: Service[] = [
     intro: "We optimize your Google Business Profile, website, and citations to secure and maintain top-three positions in Google Maps for your primary service keywords.",
     features: [
       "Google Business Profile optimization and maintenance",
-      "Local citation building and cleanup across directories",
+      "Local citation building and cleanup across platforms",
       "On-page SEO for service-area pages",
       "Review generation and management system"
     ],
@@ -251,11 +252,11 @@ export const SERVICES: Service[] = [
     name: "Listings Management",
     short: "Synced Listings",
     icon: Buildings,
-    summary: "Synced Across Maps, AI Search & Smart Speakers — locking your business details across forty plus Canadian directories, AI platforms like ChatGPT, and smart speakers like Alexa and Siri.",
+    summary: "Synced Across Maps, AI Search & Smart Speakers — locking your business details across forty plus Canadian listings, AI platforms like ChatGPT, and smart speakers like Alexa and Siri.",
     headline: "Your business information, everywhere it matters",
-    intro: "We manage your business listings across major directories, data aggregators, and emerging platforms to ensure consistency and accuracy wherever customers might search for you.",
+    intro: "We manage your business listings across major platforms, data aggregators, and emerging channels to ensure consistency and accuracy wherever customers might search for you.",
     features: [
-      "Management of 40+ Canadian business directories",
+      "Management of 40+ Canadian business listings",
       "Sync with AI platforms like ChatGPT and Perplexity",
       "Optimization for voice search on Alexa, Siri, and Google Assistant",
       "Monthly audit and correction of inconsistencies"
@@ -415,7 +416,7 @@ export const STEPS = [
     n: "02",
     title: "Build and launch",
     time: "Weeks, not quarters",
-    body: "Directory pages live in two weeks. Google Business Profile optimized in five days. Ad campaigns running in 72 hours.",
+    body: "Landing pages live in two weeks. Google Business Profile optimized in five days. Ad campaigns running in 72 hours.",
   },
   {
     n: "03",
@@ -456,7 +457,7 @@ export const INDUSTRIES: Industry[] = [
     plays: [
       {
         title: "Profile that stays current",
-        body: "Menus, hours, holiday changes, and photos are kept accurate on Google and across directories.",
+        body: "Menus, hours, holiday changes, and photos are kept accurate on Google and across listings.",
       },
       {
         title: "Review request and response flow",
@@ -464,7 +465,7 @@ export const INDUSTRIES: Industry[] = [
       },
       {
         title: "Neighborhood and cuisine pages",
-        body: "Directory pages for your area and category help you appear for the searches that bring guests in.",
+        body: "Location pages for your area and category help you appear for the searches that bring guests in.",
       },
     ],
   },
@@ -486,7 +487,7 @@ export const INDUSTRIES: Industry[] = [
       },
       {
         title: "Service-area coverage",
-        body: "Town-level directory pages and Google Business Profile service areas cover every place you work.",
+        body: "Town-level landing pages and Google Business Profile service areas cover every place you work.",
       },
       {
         title: "Call tracking by source",
@@ -508,7 +509,7 @@ export const INDUSTRIES: Industry[] = [
     plays: [
       {
         title: "Consistent listings",
-        body: "Names, addresses, hours, and providers are cleaned up and kept consistent across directories.",
+        body: "Names, addresses, hours, and providers are cleaned up and kept consistent across listings.",
       },
       {
         title: "Service pages with schema",
@@ -586,7 +587,7 @@ export const INDUSTRIES: Industry[] = [
     plays: [
       {
         title: "Central control, local detail",
-        body: "Profiles, directory pages, and schema are managed from one source of truth with location-level detail.",
+        body: "Profiles, landing pages, and schema are managed from one source of truth with location-level detail.",
       },
       {
         title: "Franchise rollouts",
@@ -629,14 +630,14 @@ export const PLANS: Plan[] = [
   {
     id: "growth",
     name: "Local Growth",
-    blurb: "Everything in Listings plus ongoing profile work and directory pages.",
+    blurb: "Everything in Listings plus ongoing profile work and landing pages.",
     monthly: 599,
     featured: true,
     cta: SITE.cta,
     highlights: [
       "Weekly posts and seasonal campaigns",
       "Review generation and response",
-      "Directory landing pages with schema",
+      "Landing pages with schema",
       "Quarterly strategy review",
     ],
   },
@@ -675,7 +676,7 @@ export const MATRIX: MatrixGroup[] = [
     rows: [
       { label: "Local visibility audit", values: [true, true, true, true] },
       { label: "Listing cleanup", values: [true, true, true, true] },
-      { label: "Directory landing pages", values: [false, true, true, true] },
+      { label: "Landing pages", values: [false, true, true, true] },
       { label: "Entity schema markup", values: [false, true, true, true] },
       { label: "AI-crawler readiness (llms.txt, sitemaps)", values: [false, true, true, true] },
     ],
@@ -712,7 +713,7 @@ export const MATRIX: MatrixGroup[] = [
 export const HOME_FAQS = [
   {
     q: "What does DigiePages do?",
-    a: "We build hyper-local directories, optimize and operate Google Business Profiles, and run local ad products, with call tracking to show which channel produced each lead.",
+    a: "We run hyper-local marketing campaigns, local SEO, regional ad products, national paid campaigns, and phone systems, with call tracking to show which channel produced each lead.",
   },
   {
     q: "Who do you work with?",
@@ -720,7 +721,7 @@ export const HOME_FAQS = [
   },
   {
     q: "How quickly can we get started?",
-    a: "The audit takes 48 hours. Google Business Profile is optimized in about five days, ad campaigns run within 72 hours, and directory pages go live in about two weeks.",
+    a: "The audit takes 48 hours. Google Business Profile is optimized in about five days, ad campaigns run within 72 hours, and landing pages go live in about two weeks.",
   },
   {
     q: "What does reporting look like?",
@@ -728,7 +729,7 @@ export const HOME_FAQS = [
   },
   {
     q: "Do you use AI?",
-    a: "We use automation for scale, such as drafting posts and generating schema, and a person reviews the output. Our directory sites are also built to be readable by AI assistants.",
+    a: "We use automation for scale, such as drafting posts and generating schema, and a person reviews the output. Our landing pages are also built to be readable by AI assistants.",
   },
 ];
 
@@ -739,7 +740,7 @@ export const PRICING_FAQS = [
   },
   {
     q: "What is the difference between Growth and Leads?",
-    a: "Growth covers your listings, profile, reviews, and directory pages. Leads adds managed local ads and call tracking so you can see which channel produced each call.",
+    a: "Growth covers your listings, profile, reviews, and landing pages. Leads adds managed local ads and call tracking so you can see which channel produced each call.",
   },
   {
     q: "Is pricing per location?",
@@ -747,6 +748,6 @@ export const PRICING_FAQS = [
   },
   {
     q: "How fast can we start?",
-    a: "The audit takes 48 hours. Profile optimization takes about five days, ads run within 72 hours, and directory pages go live in about two weeks.",
+    a: "The audit takes 48 hours. Google Business Profile is optimized in about five days, ad campaigns run within 72 hours, and landing pages go live in about two weeks.",
   },
 ];

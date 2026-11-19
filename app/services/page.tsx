@@ -9,7 +9,7 @@ import { CtaBand } from "@/components/cta-band";
 export const metadata = pageMetadata({
   title: "Local marketing services",
   description:
-    "Hyper-local directories, Google Business Profile optimization, local ad products, and lead attribution for local businesses.",
+    "Hyper-local marketing, local SEO, regional ad products, national paid campaigns, and phone systems for local businesses.",
   path: "/services",
 });
 

@@ -2,6 +2,7 @@
 
 import Link from "next/link";
 import { usePathname } from "next/navigation";
+import { Phone } from "@phosphor-icons/react";
 import { useEffect, useLayoutEffect, useRef, useState, useSyncExternalStore } from "react";
 import { NAV, SITE } from "@/lib/site";
 import { Logo } from "./logo";
@@ -79,7 +80,11 @@ export function Header() {
           })}
         </nav>
 
-        <div className="flex items-center gap-2">
+        <div className="flex items-center gap-3">
+          <div className="hidden flex items-center gap-2 rounded-full bg-accent px-4 py-2 sm:flex">
+            <Phone size={14} className="text-on-accent" />
+            <span className="text-[13px] font-medium text-on-accent whitespace-nowrap">{SITE.phone}</span>
+          </div>
           <Link
             href="/contact"
             className="pointer-events-auto hidden h-11 items-center whitespace-nowrap rounded-full bg-accent px-5 text-[15px] font-medium text-on-accent transition-[transform,background-color] duration-300 ease-glide hover:bg-accent-strong active:scale-[0.97] sm:inline-flex"
@@ -132,6 +137,10 @@ export function Header() {
               {item.label}
             </Link>
           ))}
+          <div className="mt-8 flex items-center gap-2 px-6 py-4 border-t border-line">
+            <Phone size={18} className="text-ink" />
+            <span className="text-lg font-semibold">{SITE.phone}</span>
+          </div>
           <Link
             href="/contact"
             tabIndex={open ? 0 : -1}

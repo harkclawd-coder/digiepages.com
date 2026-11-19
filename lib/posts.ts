@@ -19,7 +19,7 @@ export const POSTS: Post[] = [
       {
         heading: "Start with accuracy",
         body: [
-          "Your name, address, phone number, hours, and website should match what is on your site and in other directories. Inconsistent details confuse both customers and search engines.",
+          "Your name, address, phone number, hours, and website should match what is on your site and in other listings. Inconsistent details confuse both customers and search engines.",
           "Check special hours for holidays and update them before the date, not after.",
         ],
       },
@@ -45,17 +45,17 @@ export const POSTS: Post[] = [
     ],
   },
   {
-    slug: "what-is-a-local-directory-site",
-    title: "What a hyper-local directory site is and why it still works",
+    slug: "local-landing-pages-explained",
+    title: "What local landing pages are and why they work",
     description:
-      "How town and category directory sites help local businesses get found by search engines and AI assistants.",
+      "How local landing pages help local businesses get found by search engines and AI assistants.",
     date: "2025-09-22",
     readMinutes: 4,
     sections: [
       {
         heading: "A clear answer for a place and a category",
         body: [
-          "People search for things like a service plus a town. A directory page that answers exactly that, with accurate businesses and clear structure, is easy for search engines to understand and easy for people to use.",
+          "People search for things like a service plus a town. A landing page that answers exactly that, with accurate business details and clear structure, is easy for search engines to understand and easy for people to use.",
         ],
       },
       {
@@ -89,7 +89,7 @@ export const POSTS: Post[] = [
       {
         heading: "Give each channel its own number",
         body: [
-          "Use separate tracking numbers for your Google Business Profile, directory listings, and ads, and capture the source on web forms. Now each lead can be traced to a channel.",
+          "Use separate tracking numbers for your Google Business Profile, business listings, and ads, and capture the source on web forms. Now each lead can be traced to a channel.",
         ],
       },
       {

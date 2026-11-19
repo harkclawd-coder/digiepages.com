@@ -7,7 +7,7 @@ import { PageHeader } from "@/components/page-header";
 export const metadata = pageMetadata({
   title: "Blog",
   description:
-    "Practical guides on local SEO, Google Business Profile, directories, and lead attribution.",
+    "Practical guides on local SEO, Google Business Profile, paid ads, and lead attribution.",
   path: "/blog",
 });
 

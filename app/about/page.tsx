@@ -7,7 +7,7 @@ import { CtaBand } from "@/components/cta-band";
 export const metadata = pageMetadata({
   title: "About",
   description:
-    "DigiePages combines 15+ years of directory heritage with a modern stack to help local businesses get found, chosen, and trusted.",
+    "DigiePages combines 15+ years of marketing experience with a modern stack to help local businesses get found, chosen, and trusted.",
   path: "/about",
 });
 
@@ -16,15 +16,15 @@ export default function AboutPage() {
     <>
       <JsonLd data={breadcrumbLd([{ name: "Home", path: "/" }, { name: "About", path: "/about" }])} />
       <PageHeader
-        title="Directory heritage. Modern stack."
-        intro="We started in local directories and kept building for the businesses that depend on being found nearby."
+        title="Marketing experience. Modern stack."
+        intro="We started in local marketing and kept building for the businesses that depend on being found nearby."
         crumbs={[{ name: "About", href: "/about" }]}
       />
       <section className="mx-auto grid max-w-7xl gap-12 px-5 pb-20 md:px-8 lg:grid-cols-[1.2fr_0.8fr]">
         <div className="max-w-[62ch] space-y-5 text-lg leading-relaxed text-muted">
           <p>
             DigiePages builds and runs the digital infrastructure local
-            businesses need to be found, chosen, and trusted: directories,
+            businesses need to be found, chosen, and trusted: local SEO,
             Google Business Profile optimization, and ad products that drive
             real leads.
           </p>

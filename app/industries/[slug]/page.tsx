@@ -18,7 +18,7 @@ export async function generateMetadata(props: PageProps<"/industries/[slug]">) {
   if (!i) return {};
   return pageMetadata({
     title: `Local marketing for ${i.name.toLowerCase()}`,
-    description: `${i.headline}. ${i.summary} Directories, Google Business Profile, and local ads from ${SITE.name}.`,
+    description: `${i.headline}. ${i.summary} Local marketing, SEO, paid ads, and phone systems from ${SITE.name}.`,
     path: `/industries/${i.slug}`,
   });
 }

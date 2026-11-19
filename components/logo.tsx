@@ -2,7 +2,7 @@ import Image from "next/image";
 
 export function Logo({ size = 48 }: { size?: number }) {
   return (
-    <span className="inline-flex items-center rounded-2xl bg-[#DAF0E7] px-4 py-2.5">
+    <span className="inline-flex items-center bg-[#DAF0E7] px-3 py-1">
       <Image
         src="/digiepages-logo.svg"
         alt="DigiePages"

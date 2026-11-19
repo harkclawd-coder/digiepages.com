@@ -1,5 +1,5 @@
 import Link from "next/link";
-import { ArrowUpRight } from "@phosphor-icons/react/ssr";
+import { ArrowUpRight, Phone } from "@phosphor-icons/react/ssr";
 import { HOME_FAQS, INDUSTRIES, SERVICES, SITE, STATS, STEPS } from "@/lib/site";
 import { faqLd } from "@/lib/seo";
 import { JsonLd } from "@/components/json-ld";
@@ -18,16 +18,22 @@ export default function Home() {
         <div>
           <span className="inline-flex items-center gap-2 rounded-full border border-line bg-surface px-3.5 py-1.5 text-[13px] font-medium text-muted">
             <span className="h-1.5 w-1.5 rounded-full bg-accent" />
-            Local visibility, engineered
+            Hyper-local, local & national marketing
           </span>
           <h1 className="mt-7 max-w-[15ch] text-balance text-[2.9rem] font-semibold leading-[0.98] tracking-[-0.04em] md:text-[4.75rem]">
-            Hyper-local marketing that puts you on the map
+            Marketing that puts you on the map
           </h1>
           <p className="mt-7 max-w-[46ch] text-lg leading-relaxed text-muted md:text-xl">
-            Directories, Google Business Profile, and local ads that turn nearby
-            searches into calls and customers.
+            Hyper-local marketing, local SEO, regional ads, national paid campaigns,
+            and phone systems that turn nearby searches into calls.
           </p>
           <div className="mt-9 flex flex-wrap gap-3">
+            <div className="flex items-center gap-2">
+              <Phone size={18} className="text-accent-text" />
+              <a href={`tel:${SITE.phone}`} className="text-lg font-medium underline underline-offset-4 text-ink">
+                {SITE.phone}
+              </a>
+            </div>
             <Button href="/contact" arrow>{SITE.cta}</Button>
             <Button href="/services" variant="ghost">Explore services</Button>
           </div>
@@ -120,7 +126,7 @@ export default function Home() {
       <section className="mx-auto max-w-7xl px-4 py-24 md:px-8 md:py-36">
         <Reveal blur>
           <h2 className="max-w-[18ch] text-balance text-[2.1rem] font-semibold leading-tight tracking-[-0.035em] md:text-[3.5rem]">
-            Directory discipline. Startup speed.
+            Marketing discipline. Startup speed.
           </h2>
         </Reveal>
         <ol className="mt-16 grid gap-10 md:grid-cols-4 md:gap-8">
